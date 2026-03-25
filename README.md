@@ -55,3 +55,23 @@ Tailored specifically for the Apple Silicon architecture:
 Licensed under the MIT License. See LICENSE for details.
 
 **Powered by FILMFER.COM** | Hardware optimized for the user, not the OS.
+
+---
+
+## ☕ Support the Project
+
+If this tool helped you recover **22% of your SSD performance** or saved your drive's lifespan from unnecessary writes, consider supporting the continued development of this and other open-source tools.
+
+Every contribution helps maintain the scripts and research into hardware optimization!
+
+### 💳 Donate via PayPal
+You can send a tip directly to:
+**[paypal.me/jofifer](https://www.paypal.com/paypalme/jofifer)**
+
+| Goal | Impact |
+| :--- | :--- |
+| **Buy me a coffee ☕** | Keeps the updates coming! |
+| **Hardware Testing 🔬** | Helps buy new SSDs for stress testing and benchmarks. |
+| **Open Source 🌍** | Supports free tools for the global community. |
+
+---
