@@ -4,17 +4,15 @@
 
 macOS is efficient, but it still prioritizes diagnostic staging and aggressive indexing over user task performance. This script reclaims your SSD controller's bandwidth and extends the lifespan of your non-replaceable Apple Silicon drive.
 
----
 
 ### 🚀 **One-Liner Execution**
 Run this in **Terminal** to optimize immediately:
 
 ```zsh
 curl -s -L [https://raw.githubusercontent.com/filmfer/macOS-SSD-Optimizer-System-Cleaner/main/otimizador_mac_m2.sh](https://raw.githubusercontent.com/filmfer/macOS-SSD-Optimizer-System-Cleaner/main/otimizador_mac_m2.sh) -o otimizador.sh && chmod +x otimizador.sh && sudo ./otimizador.sh
-```
 
 
-###🛠️ **Key Optimizations**
+### 🛠️ **Key Optimizations**
 Tailored specifically for the Apple Silicon architecture:
 
   🔍 **Spotlight Throttling:** Reduces background indexing frequency to prioritize active application I/O.
@@ -39,7 +37,7 @@ Tailored specifically for the Apple Silicon architecture:
 | **Swap Memory Usage** | Aggressive SSD use     | **RAM Prioritized**| **Lower Wear** |
 
 
-###⚠️ **DISCLAIMER & LEGAL NOTICE**
+### ⚠️ **DISCLAIMER & LEGAL NOTICE**
 **USE AT YOUR OWN RISK.** 🛑
 
  - **No Liability:** Provided "as is". The author (FILMFER.COM) is not legally responsible for any data loss, system instability, or hardware damage.
@@ -60,7 +58,7 @@ If this tool helped you recover **22% of your SSD performance** or saved your dr
 Every contribution helps maintain the scripts and research into hardware optimization!
 
 
-## 💳 Donate via PayPal
+### 💳 Donate via PayPal
 You can send a tip directly to:
 **[paypal.me/jofifer](https://www.paypal.com/paypalme/jofifer)**
 
