@@ -13,6 +13,7 @@ Run this in **Terminal** to optimize immediately:
 curl -s -L [https://raw.githubusercontent.com/filmfer/macOS-SSD-Optimizer-System-Cleaner/main/otimizador_mac_m2.sh](https://raw.githubusercontent.com/filmfer/macOS-SSD-Optimizer-System-Cleaner/main/otimizador_mac_m2.sh) -o otimizador.sh && chmod +x otimizador.sh && sudo ./otimizador.sh
 ```
 
+
 ###🛠️ **Key Optimizations**
 Tailored specifically for the Apple Silicon architecture:
 
@@ -26,6 +27,7 @@ Tailored specifically for the Apple Silicon architecture:
 
   🏥 **Live Health Tracking:** Displays Data Units Written (TBW) and Percentage Used directly from the controller.
 
+
 ### 📊 Performance & Endurance Impact (macOS)
 
 | Metric                      | Stock macOS (M1/M2/M3) | Optimized (Script) | Impact Result   |
@@ -36,6 +38,7 @@ Tailored specifically for the Apple Silicon architecture:
 | **Multitasking Fluency** | Minor Micro-pauses     | **Fluid Motion** | **Reduced Delay**|
 | **Swap Memory Usage** | Aggressive SSD use     | **RAM Prioritized**| **Lower Wear** |
 
+
 ###⚠️ **DISCLAIMER & LEGAL NOTICE**
 **USE AT YOUR OWN RISK.** 🛑
 
@@ -43,16 +46,19 @@ Tailored specifically for the Apple Silicon architecture:
 
  - **Restoration:** Option 1 (System Restore Point) is mandatory before applying changes.
 
+
 ### ⚖️ **License**
 Licensed under the MIT License. See LICENSE for details.
 
 **Powered by FILMFER.COM** | Hardware optimized for the user, not the OS.
+
 
 ### ☕ Support the Project
 
 If this tool helped you recover **22% of your SSD performance** or saved your drive's lifespan from unnecessary writes, consider supporting the continued development of this and other open-source tools.
 
 Every contribution helps maintain the scripts and research into hardware optimization!
+
 
 ## 💳 Donate via PayPal
 You can send a tip directly to:
