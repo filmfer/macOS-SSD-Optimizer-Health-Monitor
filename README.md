@@ -15,25 +15,25 @@ curl -s -L [https://raw.githubusercontent.com/filmfer/macOS-SSD-Optimizer-System
 
 ---
 
-🛠️ **Key Optimizations**
+🛠️ Key Optimizations
 Tailored specifically for the Apple Silicon architecture:
 
- 🔍 **Spotlight Throttling:** Reduces background indexing frequency to prioritize active application I/O.
+ 🔍 Spotlight Throttling: Reduces background indexing frequency to prioritize active application I/O.
 
- 📡 **Telemetry Suppression:** Disables diagnostic data collection and background staging to eliminate high-cost random writes.
+ 📡 Telemetry Suppression: Disables diagnostic data collection and background staging to eliminate high-cost random writes.
 
- 💾 **Memory Swap Optimization:** Purges inactive RAM to reduce SSD "Swap" pressure and prevents unnecessary wear.
+ 💾 Memory Swap Optimization: Purges inactive RAM to reduce SSD "Swap" pressure and prevents unnecessary wear.
 
- 🧹 **Cache & Log Purge:** Safely removes diagnostic reports and temporary caches that clutter the SSD write buffer.
+ 🧹 Cache & Log Purge: Safely removes diagnostic reports and temporary caches that clutter the SSD write buffer.
 
- 🏥 **Live Health Tracking:** Displays Data Units Written (TBW) and Percentage Used directly from the controller.
+ 🏥 Live Health Tracking: Displays Data Units Written (TBW) and Percentage Used directly from the controller.
 
 ---
 
-📊 **Benchmarked Results**
+📊 Benchmarked Results
 Based on independent testing (CrystalDiskMark)
 
-**Metric**	                  **Improvement**
+Metric                   Improvement
 Random Write Speed	      +14% to +22%
 Controller Bandwidth	    +6% to +11% Reclaimed
 SSD Lifespan (TBW)	      Significant Reduction in Wear
@@ -41,12 +41,12 @@ System Latency	          Lower DPC Latency
 
 ---
 
-⚠️ **DISCLAIMER & LEGAL NOTICE**
-**USE AT YOUR OWN RISK.** 🛑
+⚠️ DISCLAIMER & LEGAL NOTICE
+USE AT YOUR OWN RISK. 🛑
 
- - **No Liability:** Provided "as is". The author (FILMFER.COM) is not legally responsible for any data loss, system instability, or hardware damage.
+ - No Liability: Provided "as is". The author (FILMFER.COM) is not legally responsible for any data loss, system instability, or hardware damage.
 
- - **Restoration:** Option 1 (System Restore Point) is mandatory before applying changes.
+ - Restoration: Option 1 (System Restore Point) is mandatory before applying changes.
 
 ---
 
