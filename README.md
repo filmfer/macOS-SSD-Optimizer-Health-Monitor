@@ -10,7 +10,7 @@ Run this in **Terminal** to optimize immediately:
 
 ```zsh
 curl -s -L [https://raw.githubusercontent.com/filmfer/macOS-SSD-Optimizer-System-Cleaner/main/otimizador_mac_m2.sh](https://raw.githubusercontent.com/filmfer/macOS-SSD-Optimizer-System-Cleaner/main/otimizador_mac_m2.sh) -o otimizador.sh && chmod +x otimizador.sh && sudo ./otimizador.sh
-
+```
 
 ### 🛠️ **Key Optimizations**
 Tailored specifically for the Apple Silicon architecture:
