@@ -9,7 +9,7 @@ macOS is efficient, but it still prioritizes diagnostic staging and aggressive i
 Run this in **Terminal** to optimize immediately:
 
 ```zsh
-curl -s -L [https://raw.githubusercontent.com/filmfer/macOS-SSD-Optimizer-System-Cleaner/main/otimizador_mac_m2.sh](https://raw.githubusercontent.com/filmfer/macOS-SSD-Optimizer-System-Cleaner/main/otimizador_mac_m2.sh) -o otimizador.sh && chmod +x otimizador.sh && sudo ./otimizador.sh
+curl -s -L [https://raw.githubusercontent.com/filmfer/macOS-SSD-Optimizer-System-Cleaner/main/otimizador_mac_apple_silicon.sh](https://raw.githubusercontent.com/filmfer/macOS-SSD-Optimizer-System-Cleaner/main/otimizador_mac_apple_silicon.sh) -o otimizador.sh && chmod +x otimizador.sh && sudo ./otimizador.sh
 ```
 
 ### 🛠️ **Key Optimizations**
