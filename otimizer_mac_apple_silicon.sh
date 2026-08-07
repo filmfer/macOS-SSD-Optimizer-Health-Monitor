@@ -1,5 +1,9 @@
 #!/bin/bash
 
+# Ensure Homebrew paths are visible even under sudo (sudo applies a restricted
+# secure_path by default and does not inherit the invoking user's PATH).
+export PATH="/opt/homebrew/bin:/usr/local/bin:$PATH"
+
 # --- CONFIGURATION / STRINGS ---
 MSG_ERROR_ADMIN="ERROR: This script must be run with sudo (Administrator)."
 MSG_HEADER="===================================================================="
@@ -49,12 +53,61 @@ optimize_ssd() {
     echo "[OK] Optimization complete. Random write latency reduced by 14-22%."
 }
 
+ensure_smartctl_installed() {
+    # Returns 0 if smartctl is available (already installed, or installed now).
+    # Returns 1 if the user declined, or the install could not be completed.
+    if command -v smartctl >/dev/null 2>&1; then
+        return 0
+    fi
+
+    echo ""
+    echo "[!] 'smartmontools' is not installed (needed for full SMART/TBW data)."
+    read -p "Install it now via Homebrew? (y/n): " install_choice
+
+    case "$install_choice" in
+        [yY]*)
+            if ! command -v brew >/dev/null 2>&1; then
+                echo "[ERROR] Homebrew not found. Install it first from https://brew.sh"
+                return 1
+            fi
+
+            echo "[+] Installing smartmontools..."
+            # Homebrew refuses to run as root, so install as the invoking (non-root) user.
+            if [ -n "$SUDO_USER" ]; then
+                sudo -u "$SUDO_USER" brew install smartmontools
+            else
+                brew install smartmontools
+            fi
+
+            if command -v smartctl >/dev/null 2>&1; then
+                echo "[OK] smartmontools installed successfully."
+                return 0
+            else
+                echo "[ERROR] Installation failed. Try manually: brew install smartmontools"
+                return 1
+            fi
+            ;;
+        *)
+            echo "[+] Continuing without smartctl - showing basic disk info only."
+            return 1
+            ;;
+    esac
+}
+
 show_health() {
     echo -e "\n[+] Reading SSD Health (SMART Data)..."
-    # Note: Requires smartmontools if you want deep TBW stats, otherwise shows basic disk info
-    diskutil info / | grep -E "Device Identifier|Container|Protocol"
     echo "------------------------------------------------------"
-    echo "Tip: For full TBW stats, install 'smartmontools' via Brew."
+
+    if ensure_smartctl_installed; then
+        # /dev/disk0 is the internal physical SSD on Apple Silicon Macs.
+        smartctl -a /dev/disk0
+    else
+        # Fallback: basic info only, no TBW/wear data.
+        diskutil info / | grep -E "Device Identifier|Container|Protocol"
+        echo "------------------------------------------------------"
+        echo "Tip: For full TBW stats, install 'smartmontools' via Brew."
+    fi
+
     echo "------------------------------------------------------"
 }
 
